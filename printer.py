@@ -1,12 +1,12 @@
 import subprocess
    
-for i in range(1,63,2):
+for i in range(1,36,2):
     print(i)
-    subprocess.run(["lp", "/Users/fuat/Desktop/esad/coding/PrintingOnBothSideWithMyPrinter/splitted/page-{}.pdf".format(i)])
+    subprocess.run(["lp", "-o fit-to-page", "splitted/page-{}.pdf".format(i)])
 
 input("press return to continue wiht the other side")
 
-for i in range(2,62,2):
+for i in range(2,38,2):
     print(i)
-    subprocess.run(["lp", "/Users/fuat/Desktop/esad/coding/PrintingOnBothSideWithMyPrinter/splitted/page-{}.pdf".format(i)])
+    subprocess.run(["lp", "-o fit-to-page", "splitted/page-{}.pdf".format(i)])
     

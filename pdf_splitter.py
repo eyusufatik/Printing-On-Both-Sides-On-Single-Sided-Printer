@@ -1,6 +1,6 @@
 from PyPDF2 import PdfFileReader, PdfFileWriter
 
-pdf_document = "fasikul.pdf"
+pdf_document = "meb.pdf"
 pdf = PdfFileReader(pdf_document)
 print(pdf.getNumPages())
 for page in range(pdf.getNumPages()):
